@@ -44,7 +44,7 @@ export interface Message {
   profiles?: { nom: string | null } | null
 }
 
-export const NUMERO_PAIEMENT = '074452674'
+export const NUMERO_PAIEMENT = '07452674'
 
 export const METHODES_PAIEMENT: MethodePaiement[] = ['Orange Money', 'Moov Money']
 

@@ -6,7 +6,7 @@ manuelle par capture d'écran.
 
 - **Stack** : React 18 + Vite 5 + TypeScript + React Router
 - **Backend** : Supabase (Auth, PostgreSQL, Storage, Realtime)
-- **Paiement** : manuel — le parent transfère au **074452674**, importe la capture du SMS,
+- **Paiement** : manuel — le parent transfère au **07452674**, importe la capture du SMS,
   un administrateur valide, le parent télécharge son reçu PDF.
 
 ---
@@ -71,7 +71,7 @@ update public.profiles
 ### Côté parent
 1. **Discussions** — échange en temps réel avec l'école (les messages envoyés hors-ligne sont mis en
    file d'attente puis envoyés automatiquement au retour du réseau).
-2. **Paiement** — les instructions s'affichent avec le numéro officiel **074452674**
+2. **Paiement** — les instructions s'affichent avec le numéro officiel **07452674**
    (bouton « Copier »). Le parent saisit le montant, choisit Orange Money ou Moov Money et importe
    la capture d'écran de son SMS.
 3. **Mes paiements** — suivi des statuts. Dès qu'un paiement est **validé**, le bouton

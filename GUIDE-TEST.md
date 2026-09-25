@@ -92,7 +92,7 @@ Tu vas tester avec **deux comptes** : un parent et un admin.
 ### ✅ Test 3 — Déclarer un paiement (parent)
 
 1. Compte **parent** → menu **Paiement**
-2. Tu dois voir le numéro **074452674** en grand, avec un bouton « Copier »
+2. Tu dois voir le numéro **07452674** en grand, avec un bouton « Copier »
 3. Saisis un montant (ex. `75000`), choisis **Orange Money**
 4. Importe une **capture d'écran** (n'importe quelle image de ton téléphone ou une capture
    d'écran de SMS — pour le test, une photo suffit)
@@ -115,7 +115,7 @@ Tu vas tester avec **deux comptes** : un parent et un admin.
 2. Le badge est maintenant **« Validé »** en vert
 3. Clique sur **« Télécharger mon reçu (PDF) »**
 4. Un fichier `recu-paykal-xxxx.pdf` se télécharge, avec le montant, la date,
-   la référence et le numéro 074452674
+   la référence et le numéro 07452674
 
 ---
 

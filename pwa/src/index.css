@@ -878,6 +878,109 @@ button {
   text-align: center;
 }
 
+/* ---------- Diagnostic ---------- */
+
+.page-diagnostic {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.resume-diagnostic {
+  margin: 1rem 0 0.5rem;
+}
+
+.resume-diagnostic strong.tout-ok {
+  color: var(--vert);
+}
+
+.resume-diagnostic strong.partiel {
+  color: var(--orange);
+}
+
+.resultats {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.resultats li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid var(--bordure);
+  background: var(--bleu-tres-clair);
+}
+
+.resultats li.ok {
+  border-color: #bfe3cf;
+  background: #f1f9f4;
+}
+
+.resultats li.ko {
+  border-color: #f5c6c0;
+  background: #fdf3f2;
+}
+
+.icone {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.contenu-resultat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.contenu-resultat strong {
+  font-size: 0.92rem;
+}
+
+.contenu-resultat small {
+  color: var(--gris);
+  font-size: 0.8rem;
+  overflow-wrap: anywhere;
+}
+
+.actions-diagnostic {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.actions-diagnostic .bouton-principal {
+  flex: 1;
+  min-width: 160px;
+}
+
+.bouton-secondaire {
+  flex: 1;
+  min-width: 160px;
+  margin-top: 1rem;
+  padding: 0.7rem 1.1rem;
+  border: 1px solid var(--bleu);
+  border-radius: 10px;
+  background: #fff;
+  color: var(--bleu);
+  font-weight: 600;
+}
+
+.bouton-secondaire:hover {
+  background: var(--bleu-clair);
+}
+
+.lien-retour {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.88rem;
+}
+
 /* ---------- Responsive ---------- */
 
 @media (max-width: 860px) {

@@ -3,6 +3,7 @@ import Layout from './components/Layout'
 import ProtectedRoute, { AdminRoute } from './components/ProtectedRoute'
 import Login from './pages/Login'
 import Register from './pages/Register'
+import Diagnostic from './pages/Diagnostic'
 import Chat from './pages/Chat'
 import Payment from './pages/Payment'
 import MyPayments from './pages/MyPayments'
@@ -13,6 +14,7 @@ export default function App() {
     <Routes>
       <Route path="/connexion" element={<Login />} />
       <Route path="/inscription" element={<Register />} />
+      <Route path="/diagnostic" element={<Diagnostic />} />
 
       <Route element={<ProtectedRoute />}>
         <Route element={<Layout />}>

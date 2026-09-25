@@ -30,7 +30,7 @@ flutter run
 
 ## Numéro officiel de réception des transferts
 
-**074452674** (Orange Money / Moov Money)
+**07452674** (Orange Money / Moov Money)
 
 ## Documentation
 
