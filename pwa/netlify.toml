@@ -1,0 +1,20 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Routage SPA : sans ça, recharger /admin ou /mes-paiements donne une 404
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Le service worker et le manifest ne doivent jamais être mis en cache
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
+
+[[headers]]
+  for = "/manifest.webmanifest"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
