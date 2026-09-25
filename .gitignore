@@ -77,3 +77,16 @@
 !**/ios/**/default.mode2v3
 !**/ios/**/default.pbxuser
 !**/ios/**/default.perspectivev3
+
+# -----------------------------------------------------------------------------
+# Variables d'environnement — ne JAMAIS commiter (contiennent les clés API)
+# -----------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# Node.js / PWA (dossier pwa/)
+node_modules/
+pwa/dist/
+pwa/dev-dist/
+*.local
