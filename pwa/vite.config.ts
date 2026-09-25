@@ -5,7 +5,13 @@ import { VitePWA } from 'vite-plugin-pwa'
 // Projet Supabase de production
 const SUPABASE_HOST = 'sxtlttaswhodbtcjjdyn.supabase.co'
 
+// Chemin de base du site. GitHub Pages sert dans /<nom-du-repo>/ : le workflow
+// définit alors VITE_BASE=/paykal/. En local et sur Netlify/Vercel : "/".
+const base = process.env.VITE_BASE ?? '/'
+const cheminBase = base.endsWith('/') ? base : `${base}/`
+
 export default defineConfig({
+  base,
   // Autorise l'accès via les hôtes de prévisualisation (proxy de la plateforme).
   // En production, l'hôte est filtré par l'hébergeur statique.
   server: { allowedHosts: true },
@@ -27,13 +33,15 @@ export default defineConfig({
         background_color: '#FFFFFF',
         display: 'standalone',
         orientation: 'portrait',
-        start_url: '/',
-        scope: '/',
+        // Chemins relatifs au manifest pour rester valides quel que soit le
+        // répertoire de déploiement (racine ou /<nom-du-repo>/ sur GitHub Pages).
+        start_url: cheminBase,
+        scope: cheminBase,
         icons: [
-          { src: '/icon-192.png', sizes: '192x192', type: 'image/png' },
-          { src: '/icon-512.png', sizes: '512x512', type: 'image/png' },
+          { src: 'icon-192.png', sizes: '192x192', type: 'image/png' },
+          { src: 'icon-512.png', sizes: '512x512', type: 'image/png' },
           {
-            src: '/icon-maskable-512.png',
+            src: 'icon-maskable-512.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'maskable',
