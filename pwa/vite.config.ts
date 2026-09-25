@@ -6,6 +6,10 @@ import { VitePWA } from 'vite-plugin-pwa'
 const SUPABASE_HOST = 'sxtlttaswhodbtcjjdyn.supabase.co'
 
 export default defineConfig({
+  // Autorise l'accès via les hôtes de prévisualisation (proxy de la plateforme).
+  // En production, l'hôte est filtré par l'hébergeur statique.
+  server: { allowedHosts: true },
+  preview: { allowedHosts: true },
   plugins: [
     react(),
     VitePWA({
